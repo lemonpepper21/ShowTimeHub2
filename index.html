@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTime Hub</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="javascript.js">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+
+    <!-- header & navi bar  -->
+    
+    <header>
+        <img class="logo"
+        src="LOGO.png"alt="LOGO image">
+    <nav>
+			<ul class="navigate_links">
+				<li><a href="./Concerts">Concerts</a></li>
+				<li><a href="./Festivals">Festivals</a></li>
+				<li><a href="./Artists">Artist</a></li>
+				<li><a href="./Reviews">Reviews<a></li>
+				<li><a href="./News">News</a></li>
+			</ul>
+		</nav>
+		<a class="profile" href="profile.html">
+			<button>My Profile</button>
+		</a>
+     
+	</header>
+
+<!-- first image/slide show  -->
+<!-- what i need - main picture, arrow pointer to change images, auto image changer, those dots at the bottom that indicate how many picture there are, text over image, 
+img to be a less opac and more opac when hover or other way around ,  -->
+
+
+<!-- trending - give the top 5 trending concert/msuci festive atm  -->
+
+<div class="slideshow-container">
+   <div class="mySlides fade">
+    <a href="https://www.ticketmaster.com/adele-tickets/artist/1159272"><img class="trending"src="artist13.jpeg" style="width:100%"></a>
+      <div class="text">Adele</div> 
+      <div class="bottom-left">Trending</div>
+      <div class="top-left">A Weekend With Adele</div>
+  <!-- <div><button class="find tickets">Find Tickets</button></div> -->
+    </div>
+    <div class="mySlides fade">
+      <a href="https://www.ticketmaster.co.uk/the-weeknd-tickets/artist/1697014"><img class="trending"src="artist2.jpeg" style="width:100%"></a>
+      <div class="text">The Weekend</div>
+      <div class="bottom-left">Trending</div>
+      <div class="top-left">After Hours Til Dawn Tour</div>   
+    </div>
+    <div class="mySlides fade">
+        <a href="https://www.ticketmaster.co.uk/50-cent-tickets/artist/713910"><img class="trending" src="artist3.jpeg" style="width:100%"></a>
+      <div class="text">50 Cent</div>
+      <div class="bottom-left">Trending</div>
+      <div class="top-left">The Final Lap Tour</div>   
+    </div>
+    <div class="mySlides fade">
+        <a href="https://www.ticketmaster.com/burna-boy-tickets/artist/2486272"></a><img class="trending"src="artist1.jpeg" style="width:100%"></a>
+        <div class="text">Burna Boy</div>
+        <div class="bottom-left">Trending</div>
+        <div class="top-left">Damini tour</div>   
+      </div>
+      <div class="mySlides fade">
+        <a href="https://www.ticketmaster.co.uk/j-hus-tickets/artist/5220832"></a><img class="trending" src="artist4.jpeg" style="width:100%"></a>
+        <div class="text">J Hus</div>
+        <div class="bottom-left">Trending</div>
+        <div class="top-left">Beautiful and Brutal Yards Tour</div>   
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span>  
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+    
+ <!-- just announced -->
+ <Section id="JA">
+
+       <p class="secondaryheader">JUST ANNOUNCED</p>
+
+    <div class="row">
+        <div class="column">
+          <a href="https://www.ticketmaster.co.uk/central-cee-tickets/artist/5347483"><img class="picture" src="artist16.jpeg"></a>
+        </div>
+        <div class="column">
+          <a href="https://www.ticketmaster.co.uk/taylor-swift-tickets/artist/1094215"><img class="picture" src="artist11.jpeg"></a>
+        </div>
+        <div class="column">
+          <a href="https://www.ticketmaster.co.uk/search?q=rihanna"><img class="picture" src="artist18.jpeg"></a>
+        </div>
+      
+    
+      <div class="row2">
+        <div class="column2">
+      <p class="rec-text-title">Lorem ipsum dolor sit amet  
+        <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+            sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </p>  
+        </div>
+        <div class="row2">
+          <div class="column2">
+            <p class="rec-text-title">Lorem ipsum dolor sit amet  
+                <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                    sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  </p>  
+          </div>
+          <div class="row2">
+            <div class="column2">
+                <p class="rec-text-title">Lorem ipsum dolor sit amet  
+                    <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                        sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>  
+          </div>
+                
+          <div class="row">
+            <div class="column">
+             <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227"> <img class="picture" src="artist12.jpeg"  ></a>
+            </div>
+            <div class="column">
+                <a href="https://www.ticketmaster.com/burna-boy-tickets/artist/2486272"><img class="picture" src="artist1.jpeg"  ></a>
+            </div>
+            <div class="column">
+                <a href="https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801"><img class="picture" src="artist8.jpeg" ></a>
+            </div>
+        
+        
+          <div class="row2">
+            <div class="column2">
+                <p class="rec-text-title">Lorem ipsum dolor sit amet  
+                    <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                        sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>  
+            </div>
+            <div class="row2">
+              <div class="column2">
+                <p class="rec-text-title">Lorem ipsum dolor sit amet  
+                    <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                        sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      </p>      
+              </div>
+              <div class="row2">
+                <div class="column2">
+                    <p class="rec-text-title">Lorem ipsum dolor sit amet  
+                        <p class="rec-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+                            sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          </p>  
+              </div>
+</Section>
+<hr>
+ <!-- just announced -->
+ <Section id="SR">
+
+    <p class="secondaryheader2">ShowTime Hub RECOMMENDS</p>
+
+    <div class="row small">
+        <div class="imagegroup" style="animation-delay: 1s;">
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/megan-thee-stallion-tickets/artist/5278077"><img src="artist17.jpeg" alt="">On Sale Now: <br>Megan Thee Stallion</a>  
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/kendrick-lamar-tickets/artist/1480454"><img src="artist10.jpeg" alt=""> On Sale Now: <br> Kendrick Lamar</a>
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/becky-hill-tickets/artist/2002208"><img src="artist6.jpeg" alt=""> On Sale Now: <br>Becky Hill</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/the-weeknd-tickets/artist/1697014"><img src="artist2.jpeg" alt="">On Sale Now: <br>The Weekend</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.com/ari-lennox-tickets/artist/2078611"><img src="artist5.jpeg" alt="">On Sale Now: <br>Ari Lennox</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/j-hus-tickets/artist/5220832"><img src="artist4.jpeg" alt="">On Sale Now: <br>J Hus</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.com/billie-eilish-tickets/artist/2257710"><img src="artist20.webp" alt="">On Sale Now: <br>Billie Eilish </a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/j-hus-tickets/artist/5220832"><img src="artist9.jpeg" alt="">On Sale Now: <br>Harry Styles</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.com/bts-tickets/artist/2110227"><img src="artist12.jpeg" alt="">On Sale Now: <br>BTS</a> 
+          <a class="rec-artist-name"  href="https://www.ticketmaster.co.uk/central-cee-tickets/artist/5347483"><img src="artist16.jpeg" alt="">On Sale Now: <br>Central Cee</a> 
+        </div>
+<div class="second-button">
+        <a href="./concerts"><button class="secodary-button-styling">More Shows</button></a>
+      </div>
+</Section>
+<hr>
+
+<Section id="RW">
+
+    <a href="./Reviews"><p class="secondaryheader2">ShowTime Hub Reviews</p></a>
+<!-- 
+    main image -->
+    <div class="container-mr">
+<div class="review-main-img">
+    <a href="https://www.esquire.com/entertainment/music/a44715880/beyonce-renaissance-tour-review/"><img class="review-main-img"  src="review1.jpeg" alt="">
+  <div class="centered-mr">Beyonce - The Renaissance World Tour</div></a> 
+</div>
+<!--secondary images -->
+<div id="secondary-images">
+    <div class="container-r">
+      <div class="item">
+          <a href="https://www.nme.com/reviews/live/bts-live-busan-review-yet-to-come-3329310"><img class="review-secondary-img" src="artist12.jpeg"></a>
+      </div>
+      <div class="item">
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+          <br><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-r">
+      <div class="item">
+        <a href="https://www.theguardian.com/music/2022/may/28/ed-sheeran-live-review-cardiff-principality-stadium"><img class="review-secondary-img" src="artist15.jpeg"></a>
+      </div>
+      <div class="item">
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+          <br><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquamLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis sagittis enim. Nulla viverra aliquam.</p>
+        </div>
+      </div>
+  </div>
+  <br>
+    <div class="second-button">
+       <a href="#Reviews"><button class="secodary-button-styling">More Reviews</button></a> 
+      </div>
+      <br><br>
+
+   
+
+</Section>
+
+<!-- FOOTER -->
+
+<footer>
+    <img class="logo"
+    src="logofooter.png"alt="LOGO image">
+<nav>
+        <ul class="footerlinks">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Careers<a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+    </nav>
+    <br>
+    <div>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+    </div>
+    
+</footer>
+
+
+</body>
+</html>

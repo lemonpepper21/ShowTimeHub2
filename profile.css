@@ -1,0 +1,501 @@
+body{ background-color: #ffecd7;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+hr{height: 4px;
+margin-left: 3%;
+margin-right: 3%;
+ background-color: #f6a2bf;
+ border: none;}
+
+.second-button{
+display: flex;
+ justify-content: center;
+
+}
+
+.secodary-button-styling{
+ size: 100px;}
+
+header{ margin-bottom: 5px;}
+
+.logo{position: fixed, left}
+
+/* logo*/
+header img {
+   display: block;
+   height: 84px;
+   cursor: pointer;
+   margin-right: auto;
+   
+}
+
+
+
+.welcome{   
+justify-content: center;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 30px;
+
+
+}
+
+.welcomeheader{
+text-align: center;
+font-size: 30px;
+}
+
+
+/* SECONDARY LINKS */
+
+.navigate_links2 {
+   list-style: none;
+   background-color: #ffd8ad;
+   width: 100%;
+   /* text-align: center; */
+   float: center;
+}
+
+.navigate_links2 li {
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 20px;
+   justify-content: space-evenly;
+   justify-content: center;
+   text-align: center;
+   
+   
+} 
+
+.navigate_links2 li a {
+   transition: all 0.3s ease-in-out 0s;
+   width: 100%;
+}
+
+
+.navigate_links2 li a:hover {
+
+   border: 2px solid #006e8c;
+   box-shadow: 3px 3px 3px #f6a2bf, 3px 3px 3px blue;
+   border-radius: 8px; 
+   margin: 10px;
+   padding: 12px;
+   width: 100%;
+}
+
+
+li,
+a,
+button {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 800;
+   font-size: 20px;
+   color: #006e8c;
+   text-decoration: none;
+   font: bold;
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN NAV LINKS */
+
+header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 30px 10%;
+}
+
+
+.navigate_links {
+   list-style: none;
+}
+
+.navigate_links li {
+   display: inline-block;
+   padding: 10px 20px;
+}
+
+.navigate_links li a {
+   transition: all 0.3s ease-in-out 0s;
+}
+
+
+.navigate_links li a:hover {
+
+   border: 2px solid #006e8c;
+   box-shadow: 3px 3px 3px #f6a2bf, 3px 3px 3px blue;
+   border-radius: 8px; 
+   margin: 10px;
+   padding: 12px;
+}
+
+button {
+   margin-left: 70px;
+   padding: 9px 12px;
+   border-radius: 15px;
+   background-color: #f6a2bf; 
+   color: rgb(243, 236, 236);
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+button:hover {
+   background-color: #006e8c;
+   color: black;
+}
+
+
+/* 
+SPOTFIY BUTTON */
+
+
+.button2 {background-color: #1DB954;
+   float: right;
+   margin-right: 20px;
+   margin-top: 20px;
+} 
+
+.button2:hover {
+   background-color: #1DB954;
+   color: black;
+}
+
+
+/* 
+ON SALE NOW SLIDESHOW */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+.trending {object-fit: contain;
+/* object-fit: fill; */
+height: 500px;
+width: 50%;}
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+ height: 50%;
+  width:50%;
+  position: sticky;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #006e8c;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+   background-color: #f6a2bf;
+
+}
+
+/* trending */
+.bottom-left { 
+ color: white;
+ font-size: 30px;
+   position: absolute;
+   top: 40px;
+   left: 45px;
+   background-color: rebeccapurple;
+   border-width: 15px;
+   border-style: solid;
+   border-color: rebeccapurple;
+   border-radius: 15PX;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* concert name  */
+.top-left {
+ color: #f2f2f2;
+ font-size: 30px;
+ position: absolute;
+ bottom: 60px;
+ width: 100%;
+ text-align: center;
+ font-family: "Montserrat", sans-serif;
+}
+
+/* artist */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f6a2bf;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+/* SECONDARY HEADERS STYLYING  */
+.secondaryheader{justify-content: center;
+text-align: center;
+color: #006e8c;
+font-size: 36px;
+font-weight: bold;
+margin-top: 55px;
+margin-bottom: 70px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MY SHOWS */
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+ float: left;
+ width: 25%;
+ /* padding: 5px; */
+ height: 400px;
+ object-fit: contain;
+object-fit: fill;
+}
+
+/* Clear floats after image containers */
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
+ object-fit: contain;
+object-fit: fill;
+height: 30px;
+}
+
+.picture {
+ object-fit: contain;
+ object-fit: fill; 
+width: 80%;
+ height: 400px;
+ margin-left: 50px;
+ margin-right: 55px;
+ margin-bottom: 15px; 
+ margin-top: 5px;
+ justify-content: center;
+ /* display:inline-block;
+ align-items: center; */
+}
+
+.picture :hover{  border: 2px solid #006e8c;
+ box-shadow: 3px 3px 3px #f6a2bf, 3px 3px 3px blue;
+ border-radius: 8px; 
+ margin: 10px;
+ padding: 12px;  
+
+
+}
+
+.rec-text
+{
+ width: 80%;
+ height: 5px;
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ justify-content: center;
+ display:inline-block;
+ align-items: center;
+}
+
+
+.rec-text-title{
+ font-style: bold;
+ text-align: center;
+ text-decoration: underline;
+ 
+}
+
+
+
+/* Clear floats after image containers */
+.row2::after {
+ content: "";
+ clear: both;
+ display: table;
+ object-fit: contain;
+object-fit: fill;
+height: 10px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column2 {
+ float: left;
+ width: 25%;
+ padding: 5px;
+ height: auto;
+ object-fit: contain;
+object-fit: fill;
+}
+
+
+
+
+
+.picture:hover{  
+   opacity: 0.3;}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer img {
+   display: block;
+   height: 84px;
+   cursor: pointer;
+   margin-right: auto;
+}
+
+footer {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 30px 10%;
+ position: relative;
+  bottom:0;
+  width:100%;
+  height:100px;
+  background:#ffd8ad
+}
+
+
+.footerlinks {
+   list-style: none;
+}
+
+.footerlinks li {
+   display: inline-block;
+   padding: 10px
+}
+
+.fa {
+   padding: 10px;
+   width: 10px;
+   text-align: right;
+   text-decoration: none;
+   margin: 5px 2px;
+   
+ }
+
+
+
+
+
+
+/* PROFILE PAGE */
+
+h2{ color: #006e8c;
+  font-weight: 600px;
+font-size: 30px;
+padding-left: 40px;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans 3', sans-serif;}
+
+header img {
+   display: block;
+   height: 84px;
+   cursor: pointer;
+   /* margin-right: auto; */
+}
+
+.headerp{
+
+margin-top: 50px;
+}
+
