@@ -1,0 +1,489 @@
+/*CSS Reset*/
+/*Let's import google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{ 
+    color: #f6a2bf;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #f6dbbe;
+    color: #e6909d;
+}
+
+/* Header Section */
+.header{
+    background: #006e8c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    font-size:2.2rem;
+    font-weight: 600px;
+    color: #f6a2bf;
+}
+
+.menu-bar a{
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    transition: 0.4s ease;
+}
+
+.menu-bar a:hover{
+    color: #f6a2bf;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    display: none;
+}
+
+section{
+    padding: 10rem 10%;
+    min-height: 100vh;
+}
+/*Home Section*/
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-bio h3{
+    font-size: 2.5rem;
+}
+
+span{ 
+    color: #006e8c;
+}
+
+.Home-bio h1{
+    font-size: 3.5rem;
+    line-height: 1.4;
+}
+
+.Home-bio p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.profilepic img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.social-media a{
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 2.2rem;
+    margin: 1rem 1rem 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+.social-media a:hover{
+    color: pink;
+    box-shadow: 0 0 1rem purple;
+}
+
+.btn{
+    display: inline-block;
+    background: #f6a2bf;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 600px;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    color: #f6a2bf;
+    background: #000;
+    box-shadow: 0 0 1rem #f6a2bf;
+}
+
+
+
+/*About Section*/
+
+.MatchMaker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 3.3rem;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem 0;
+}
+.MatchMaker-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.MatchMaker-resume h3{
+    font-size: 2.4rem;
+}
+
+.MatchMaker-text p{
+    font-size: 1.8rem;
+}
+
+/*Festivals Section*/
+
+.Festivals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Festivals-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.Festivals-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Festivals-card:hover{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+
+
+.Festivals-card .bx{
+    font-size: 8rem;
+    transition: 0.4s ease;
+}
+
+.Festivals-card .bx:hover{
+    color: pink;
+}
+
+.Festivals-card h3{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.Festivals-card p{
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+
+
+
+/*gallery Section*/
+
+.Gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Gallery-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+.Gallery-card{
+    position: relative;
+    height: 35rem;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Gallery-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.card-overlay{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer; 
+}
+
+.card-overlay:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    transition: 0.4s all linear;
+}
+
+.card-overlay .bx{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.8rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165. 1);
+}
+
+.card-overlay .bx:hover{
+    transform:scale(1.2);
+    color: pink;
+    background: #0000;
+    box-shadow: 0 0 2rem pink
+}
+
+/*Contact Reset*/
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+form input,
+textarea{
+width: 100%;
+padding: 1rem;
+font-size: 1.5rem;
+color: #fff;
+background: rgba(0, 0, 0, 0.5);
+border-radius: 1rem;
+resize: none;
+}
+
+
+/*Events Reset*/
+
+.event-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-left {
+    background: #83455b;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #ba93a1;
+    color: #d95082;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
+
+/*Footer Reset*/
+
+.footer{
+    padding: 2rem 10%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+hr{
+    margin: 1rem;
+    border-bottom: thin solid #fff;
+}
+
+/*Responsive Reset*/
+@media (max-width: 1200px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 992px){
+    .header{
+        padding: 2rem;
+    }
+    .home img{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 767px){
+    #menu-btn{
+        display: block;
+    }
+    .menu-bar{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+    }
+    .menu-bar.active{
+        display: block;
+    }
+    .menu-bar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    
+    .Home, .About-items{
+        flex-direction: column;
+    }
+
+    .home img{
+        width: 80vw;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .Skills-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 620px){
+    .Skills-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .Projects-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .heading{
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
